@@ -1,0 +1,21 @@
+%h1 firefinder
+%p How far is your fire station?
+
+#map
+
+#wrapper
+  #info
+
+  %form
+    %fieldset
+      %legend Enter Your Home Address
+      %label(for='address') Address
+      %input(type='text' name='address' placeholder='123 Main St., Nashville, TN')
+      %button#firefind Find My Fire Station!
+
+  %form
+    %fieldset
+      %legend Use Your Current Location
+      %button#geolocation Find from My Location
+
+=javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEkfjUXM6kVXdxgJA21r1OH0hTuZkL75U&sensor=true"
